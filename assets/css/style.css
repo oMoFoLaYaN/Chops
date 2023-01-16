@@ -5,7 +5,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 47; /* Red 0 - Yellow 60 - Green 120 - Cyan 180 - Blue 240 - Magenta 300 */
+  --hue-color: 139; /* Red 0 - Yellow 60 - Green 120 - Cyan 180 - Blue 240 - Magenta 300 */
 
   /* HSL color mode */
   
@@ -89,10 +89,11 @@ h6 {
 
 .clay {
   backdrop-filter: blur(5px); 
-  background-color: rgba(255, 255, 255, 0.1); 
-  box-shadow: 0px 35px -50px 0px rgba(254, 206, 26, 0.5), 
+  background-color: rgba(255, 255, 255, 1); 
+  border-radius: 26px; 
+  box-shadow: 0px 35px 68px 0px rgba(254, 206, 26, 0.5), 
               inset 0px -8px 16px 0px rgba(254, 206, 26, 0.6), 
-              inset 0px 11px 28px 0px rgba(254, 206, 26, 0.6);
+              inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -803,17 +804,12 @@ section {
 
 .menu .menu-item {
   margin-top: 50px;
-  display: flex;
-  flex-direction: column;
 }
 
 .menu .menu-img {
   width: 70px;
   border-radius: 50%;
-  justify-content: center;
-  display: flex;
-  position: relative;
-  transform: translate(10rem, 0);
+  float: left;
   border: 5px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -821,13 +817,12 @@ section {
   margin-left: 85px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 
 .menu .menu-content a {
   padding-right: 10px;
-  background: var(--body-color);
   position: relative;
   z-index: 3;
   font-weight: 700;
@@ -840,7 +835,6 @@ section {
 }
 
 .menu .menu-content span {
-  background: var(--body-color);
   position: relative;
   z-index: 3;
   padding: 0 10px;
@@ -852,7 +846,6 @@ section {
   margin-left: 85px;
   font-style: italic;
   font-size: 14px;
-  text-align: center;
   font-family: "Poppins", sans-serif;
   color: var(--text-color-light);
 }
