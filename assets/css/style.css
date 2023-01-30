@@ -803,7 +803,6 @@ section {
 
 .menu .menu-contain {
   width: 100%;
-  height: 9rem;
   position: relative; 
   display: flex;
   align-items: center;
@@ -811,11 +810,9 @@ section {
   overflow: auto;
   scroll-behavior: smooth;
   transition: 1s linear;
+  scrollbar-width: none;
 }
 
-.menu .menu-contain ::-webkit-scrollbar {
-  display: none;
-}
 
 .menu .menu-item {
   margin-top: 50px;
