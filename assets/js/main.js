@@ -186,7 +186,7 @@
     if (menuContainer) {
       let menuIsotope = new Isotope(menuContainer, {
         itemSelector: '.menu-item',
-        layoutMode: 'masonry'
+        layoutMode: 'fitRows'
       });
 
       let menuFilters = select('#menu-flters li', true);
